@@ -1,0 +1,21 @@
+sudo apt-get update
+sudo apt-get install azure-cli
+
+cd /usr/local/dotnet
+mkdir 8.0.100
+cd 8.0.100
+
+wget https://download.visualstudio.microsoft.com/download/pr/5226a5fa-8c0b-474f-b79a-8984ad7c5beb/3113ccbf789c9fd29972835f0f334b7a/dotnet-sdk-8.0.100-linux-x64.tar.gz
+tar zxf dotnet-sdk-8.0.100-linux-x64.tar.gz 
+rm dotnet-sdk-8.0.100-linux-x64.tar.gz 
+
+rm /usr/local/dotnet/current
+ln -s /usr/local/dotnet/8.0.100/ /usr/local/dotnet/current
+
+
+----------------------
+whereis dotnet
+
+which dotnet
+
+echo "${PATH//:/$'\n'}"
