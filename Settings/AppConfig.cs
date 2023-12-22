@@ -37,12 +37,12 @@ public static class AppConfig
 
         if (File.Exists(configFile))
         {            
-            Console.WriteLine("file find");
+            //Console.WriteLine("file find");
             myConfig = JsonSerializer.Deserialize<aoaiSettings>(File.ReadAllText(configFile));            
         }
         else
         {
-            Console.WriteLine("file not find");
+            //Console.WriteLine("file not find");
         }
 
         return myConfig;
