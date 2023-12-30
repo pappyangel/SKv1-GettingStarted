@@ -27,6 +27,7 @@ public static class AppConfig
         public string? deployDavinci { get; set; } //= null;
         public string? deployTurbo { get; set; } //= null;
         public string? deployEmbed { get; set; } //= null;
+        public string? deployTurboInstruct { get; set; } //= null;
         public string? QdrantEndpoint { get; set; } //= null;
         
     }
