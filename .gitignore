@@ -399,3 +399,6 @@ FodyWeavers.xsd
 
 # Python Virtual environment
 .env
+
+# VectorDB
+chroma/ 
